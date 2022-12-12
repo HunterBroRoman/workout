@@ -1,0 +1,2 @@
+const a=document.querySelector("#weather");a&&async function(e){a.innerHTML='\n    <div class="weather_loading">\n    <img src="./images/7gQj.jpg" alt="Loading..."\n    </div>';const n=await fetch("https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=844453e050df5ad471b8fa9c3f6d13aa",{metod:"GET"}),t=await n.json();var o;n.ok?(o=t,console.log(o)):a.innerHTML=t.message}();
+//# sourceMappingURL=index.89639da2.js.map
